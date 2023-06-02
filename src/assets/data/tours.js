@@ -10,7 +10,8 @@ const tours = [
   {
     id: "01",
     title: "Toàn thành phố Hồ Chí Minh",
-    city: " TP. Hồ Chí Minh - Việt Nam",
+    city: " TP. Hồ Chí Minh",
+    address: "Việt Nam",
     distance: 300,
     price: 99,
     maxGroupSize: 10,
@@ -20,18 +21,6 @@ const tours = [
         name: "Will",
         rating: 4.6,
       },
-      {
-        name: "Will",
-        rating: 4.4,
-      },
-      {
-        name: "Will",
-        rating: 4.8,
-      },
-      {
-        name: "Will",
-        rating: 4.2,
-      },
     ],
     avgRating: 4.5,
     photo: tourHCM,
@@ -40,7 +29,8 @@ const tours = [
   {
     id: "02",
     title: "Mũi Cà Mau",
-    city: "Cà Mau - Việt Nma",
+    city: "Cà Mau",
+    address: "Việt Nam",
     distance: 400,
     price: 99,
     maxGroupSize: 8,
@@ -58,7 +48,8 @@ const tours = [
   {
     id: "03",
     title: "Bến Ninh Kiều Cần Thơ",
-    city: "TP. Cần Thơ - Việt Nam",
+    city: "TP. Cần Thơ",
+    address: "Việt Nam",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -71,7 +62,8 @@ const tours = [
   {
     id: "04",
     title: "Lăng chủ tịch Hồ Chí Minh",
-    city: "Hà Nội - Việt Nam",
+    city: "Hà Nội",
+    address: "Việt Nam",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -84,7 +76,8 @@ const tours = [
   {
     id: "05",
     title: "Biển Nha Trang",
-    city: "Khánh Hòa - Việt Nam",
+    city: "Khánh Hòa",
+    address: "Việt Nam",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -102,7 +95,8 @@ const tours = [
   {
     id: "06",
     title: "Cầu Tay Vàng",
-    city: "Đà Nẵng - Việt Nam",
+    city: "Đà Nẵng",
+    address: "Việt Nam",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -120,7 +114,8 @@ const tours = [
   {
     id: "07",
     title: "Thành phố sương mù Sapa",
-    city: "Lào Cai - Việt Nam",
+    city: "Lào Cai",
+    address: "Việt Nam",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -141,8 +136,9 @@ const tours = [
   },
   {
     id: "08",
-    title: "Chợ Biến Thành - Nhà Thời Đức Bà - Dinh Độc Lập",
-    city: "TP. Hồ Chí Minh - Việt Nam",
+    title: "Chợ Biến Thành  - Dinh Độc Lập",
+    city: "TP. Hồ Chí Minh",
+    address: "Việt Nam",
     distance: 500,
     price: 99,
     maxGroupSize: 8,

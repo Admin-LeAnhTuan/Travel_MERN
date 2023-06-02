@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Container, Row, Button } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
 
@@ -12,8 +12,8 @@ const nav__link = [
     display: "Home",
   },
   {
-    path: "/about",
-    display: "About",
+    path: "/contact",
+    display: "Contact",
   },
   {
     path: "/tours",
@@ -22,8 +22,27 @@ const nav__link = [
 ];
 
 const Header = () => {
+  const headerRef = useRef(null);
+
+  const StickHeaderFuc = () => {
+    window.addEventListener("scroll", () => {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        headerRef.current.classList.add("sticky__header");
+      } else {
+        headerRef.current.classList.remove("sticky__header");
+      }
+    });
+  };
+
+  useEffect(() => {
+    StickHeaderFuc();
+    return window.removeEventListener("scroll", StickHeaderFuc);
+  });
   return (
-    <header className="header">
+    <header className="header" ref={headerRef}>
       <Container>
         <Row>
           <div
@@ -32,7 +51,9 @@ const Header = () => {
           >
             {/* ========== Logo ========== */}
             <div className="logo">
-              <img src={logo} alt="" />
+              <Link to={"/home"}>
+                <img src={logo} alt="" />
+              </Link>
             </div>
             {/* =========================== */}
 

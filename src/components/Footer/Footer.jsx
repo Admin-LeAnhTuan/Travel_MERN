@@ -139,7 +139,7 @@ const Footer = () => {
           <Col lg="12" className="text-center">
             <p className="copyright">
               <i className="ri-copyright-fill"></i>
-              Copyright {year}, design and developer by TLA & LTT
+              Copyright {year}, design and developer by TLA & LTT & DNC
             </p>
           </Col>
         </Row>

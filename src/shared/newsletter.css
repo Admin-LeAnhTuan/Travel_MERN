@@ -44,6 +44,10 @@
   font-size: 1.1rem !important;
 }
 
+.newsletter__btn:hover {
+  border-radius: 20px;
+}
+
 .newsletter__content p {
   color: var(--heading-color);
   font-size: 1.1rem;

@@ -10,7 +10,7 @@ import MasonryImagesGallery from "./../components/Images-Gallery/MasonryImagesGa
 import Testimonials from "../components/Testimonial/Testimonials";
 import Newsletter from "../shared/Newsletter";
 
-import Erath from "../assets/images/Logo/Earth.avif";
+import Erath from "../assets/images/Logo/Earth.png";
 import ImgTraler from "../assets/images/Traler/landmark.jpg";
 import VideoTraler from "../assets/images/Traler/halongBay.mp4";
 import ImgTravel_Traler from "../assets/images/Traler/travel.jpg";
@@ -30,7 +30,7 @@ const Home = () => {
                   <img src={Erath} alt="" />
                 </div>
                 <h1>
-                  Traveling opens the door to creating
+                  Traveling opens the door to create
                   <span className="highlight"> Memories</span>
                 </h1>
                 <p>
